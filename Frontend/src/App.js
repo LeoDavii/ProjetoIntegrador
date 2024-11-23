@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import About from './components/About'; // Importando a página Sobre Nós
-import Contact from './components/Contact'; // Importando a página Fale Conosco
-import Products from './components/Products'; // Importando a página Fale Conosco
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Importando as rotas
+import About from './components/About';
+import Contact from './components/Contact'; 
+import Products from './components/Products'; 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { UserProvider } from './utils/UserContext';
 import { CartProvider } from './utils/CartContext'; 

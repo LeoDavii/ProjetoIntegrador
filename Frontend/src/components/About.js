@@ -4,7 +4,7 @@ import './styles/About.css';
 const About = () => {
   return (
     <section className="about">
-      <h2 className="about-title">Sobre Nós</h2>
+      <h2 id="about-title" className="about-title">Sobre Nós</h2>
       <div className="about-content">
         <p>
           Bem-vindo à Cupcake Store! Somos uma empresa dedicada a trazer os melhores cupcakes

@@ -4,12 +4,12 @@ import { FaPlus, FaExclamationCircle } from 'react-icons/fa';
 import './styles/Products.css';
 import { useUser } from '../utils/UserContext';
 import UserRole from '../utils/UserRole';
-import { useCart } from '../utils/CartContext';  // Importando o hook do carrinho
+import { useCart } from '../utils/CartContext';
 
 const Products = () => {
   const { userRole } = useUser();
-  const isUserLoggedIn = userRole !== null; // Definindo a função isUserLoggedIn
-  const { addToCart } = useCart();  // Obtendo a função de adicionar ao carrinho
+  const isUserLoggedIn = userRole !== null;
+  const { addToCart } = useCart();
   const [products, setProducts] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
@@ -21,7 +21,7 @@ const Products = () => {
     imageUrl: '',
   });
   const [errors, setErrors] = useState({});
-  const { isOpen, setIsOpen } = useCart(); // Acesse o estado de showCart aqui
+  const { setIsOpen } = useCart();
 
   const fetchProducts = async () => {
     try {
@@ -60,8 +60,8 @@ const Products = () => {
   };
 
   const handleAddToCart = (product) => {
-    addToCart(product);  // Adiciona o produto ao carrinho
-    setIsOpen(true);    // Abre o carrinho automaticamente após adicionar o produto
+    addToCart(product); 
+    setIsOpen(true); 
   };
 
   const handleDeleteConfirmation = (product) => {
@@ -142,12 +142,11 @@ const Products = () => {
             name={product.name}
             description={product.description}
             value={product.value}
-            userRole={userRole}
             imageUrl={product.imageUrl}
             onDelete={() => handleDeleteConfirmation(product)}
             onEdit={() => handleEdit(product)}
             onAddToCart={() => handleAddToCart(product)} 
-            isUserLoggedIn={isUserLoggedIn}            // Adicionando a funcionalidade de adicionar ao carrinho
+            isUserLoggedIn={isUserLoggedIn}
           />
         ))}
         {userRole === UserRole.Manager && (

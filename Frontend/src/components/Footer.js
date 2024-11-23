@@ -16,7 +16,7 @@ const Footer = () => (
                 href="https://www.linkedin.com/in/leonardo-davi-tavares"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textDecoration: 'none', color: 'inherit' }} // opcional, estilização do link
+                style={{ textDecoration: 'none', color: 'inherit' }}
                 >
                 <FaLinkedin />
             </a>  
@@ -24,17 +24,17 @@ const Footer = () => (
             href="https://github.com/LeoDavii"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ textDecoration: 'none', color: 'inherit' }} // opcional, estilização do link
+            style={{ textDecoration: 'none', color: 'inherit' }}
             >
-            <FaGithub /> {/* Tamanho ajustável */}
+            <FaGithub />
             </a>          
             <a
             href="https://github.com/LeoDavii"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ textDecoration: 'none', color: 'inherit' }} // opcional, estilização do link
+            style={{ textDecoration: 'none', color: 'inherit' }}
             >
-            <FaGoogle /> {/* Tamanho ajustável */}
+            <FaGoogle />
             </a>     
             </div>
         </div>
