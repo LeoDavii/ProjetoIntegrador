@@ -1,0 +1,25 @@
+.about {
+    border: 1px solid #e0c3c8; /* Borda semelhante ao ProductCard */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 1.5rem;
+    margin: 2rem auto; /* Centraliza horizontalmente */
+    text-align: center;
+    width: 50%; /* Dimensão menor para o estilo de card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease; /* Animação ao pairar */
+    background-color: #ffffff; /* Fundo branco para manter o estilo */
+  }
+  
+  .about-title {
+    font-size: 1.5rem; /* Tamanho ajustado para card */
+    color: #4d2c1d; /* Cor semelhante aos valores destacados */
+    margin-bottom: 1rem;
+  }
+  
+  .about-content {
+    font-size: 0.9rem; /* Texto menor para compactação */
+    color: #666; /* Cor neutra */
+    line-height: 1.4;
+  }
+  
+  

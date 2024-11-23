@@ -1,0 +1,13 @@
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+  .category {
+    background-color: #f8e1e7;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #4d2c1d;
+    cursor: pointer;
+  }
+  

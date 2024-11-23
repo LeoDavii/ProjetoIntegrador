@@ -1,0 +1,32 @@
+.contact {
+    border: 1px solid #e0c3c8; /* Borda semelhante à seção about */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 1.5rem;
+    margin: 2rem auto; /* Centraliza horizontalmente */
+    text-align: center;
+    width: 50%; /* Dimensão menor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background-color: #ffffff; /* Fundo branco */
+  }
+  
+  .contact-title {
+    font-size: 1.5rem; /* Tamanho do título */
+    color: #4d2c1d; /* Cor semelhante à seção about */
+    margin-bottom: 1rem;
+  }
+  
+  .contact p {
+    font-size: 0.9rem; /* Texto menor */
+    color: #666; /* Cor neutra */
+    line-height: 1.4;
+  }
+  
+  .contact a {
+    color: #ff6f61; /* Cor de destaque para o link */
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline; /* Efeito hover para o link */
+  }
+  
