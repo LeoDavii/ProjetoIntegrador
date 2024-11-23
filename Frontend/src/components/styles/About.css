@@ -1,24 +1,24 @@
 .about {
-    border: 1px solid #e0c3c8; /* Borda semelhante ao ProductCard */
-    border-radius: 10px; /* Cantos arredondados */
+    border: 1px solid #e0c3c8;
+    border-radius: 10px; 
     padding: 1.5rem;
-    margin: 2rem auto; /* Centraliza horizontalmente */
+    margin: 2rem auto; 
     text-align: center;
-    width: 50%; /* Dimensão menor para o estilo de card */
+    width: 50%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease; /* Animação ao pairar */
-    background-color: #ffffff; /* Fundo branco para manter o estilo */
+    transition: transform 0.2s ease; 
+    background-color: #ffffff; 
   }
   
   .about-title {
-    font-size: 1.5rem; /* Tamanho ajustado para card */
-    color: #4d2c1d; /* Cor semelhante aos valores destacados */
+    font-size: 1.5rem; 
+    color: #4d2c1d; 
     margin-bottom: 1rem;
   }
   
   .about-content {
-    font-size: 0.9rem; /* Texto menor para compactação */
-    color: #666; /* Cor neutra */
+    font-size: 0.9rem; 
+    color: #666; 
     line-height: 1.4;
   }
   

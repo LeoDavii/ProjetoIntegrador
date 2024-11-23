@@ -1,42 +1,42 @@
 .cart-overlay {
     position: fixed;
     top: 0;
-    right: 0; /* Mudou de left: 0 para right: 0 */
-    width: 100vw; /* Ocupa toda a largura */
-    height: 100vh; /* Ocupa toda a altura */
-    background-color: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+    right: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
-    justify-content: flex-end; /* Alinha o carrinho à direita */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: flex-end; 
+    align-items: center; 
     z-index: 1000;
     transition: background-color 0.3s ease;
 }
 
-/* Abrindo o carrinho, aplica uma transição suave */
+
 .cart-overlay.open .cart-container {
-    transform: translateX(0); /* Desliza o carrinho para a tela */
+    transform: translateX(0); 
 }
 
 .cart-overlay.open.checkout {
     justify-content: center;
 }
 
-/* Carrinho de compras que ocupará a largura da tela (ajustado para 60%) */
+
 .cart-container {
     background-color: #fff;
-    width: 30%; /* A largura do carrinho agora é 60% da tela */
-    height: 100vh; /* O carrinho ocupa toda a altura */
+    width: 30%; 
+    height: 100vh; 
     padding: 30px;
     display: flex;
     flex-direction: column;
-    border-radius: 0px 20px 20px 0px; /* Bordas arredondadas à direita */
-    box-shadow: -10px 0px 30px rgba(0, 0, 0, 0.1); /* Sombra na borda esquerda */
-    transform: translateX(100%); /* Inicialmente o carrinho começa fora da tela à direita */
+    border-radius: 0px 20px 20px 0px; 
+    box-shadow: -10px 0px 30px rgba(0, 0, 0, 0.1); 
+    transform: translateX(100%); 
     transition: transform 0.3s ease-in-out;
 }
 
 .cart-container.close {
-    display: none; /* Desliza o carrinho para a tela */
+    display: none; 
 }
 
 .cart-header {

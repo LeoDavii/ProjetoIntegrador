@@ -11,7 +11,7 @@ const LoginPopup = ({ onClose, onLoginSuccess }) => {
         setError('');
 
         try {
-            const response = await fetch('https://localhost:44321/api/user', {
+            const response = await fetch('http://localhost:8080/api/user', {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',

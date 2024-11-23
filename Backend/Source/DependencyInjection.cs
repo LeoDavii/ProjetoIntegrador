@@ -19,7 +19,7 @@ namespace Source
         {
             services.Configure<DatabaseContextOptions>(options =>
             {
-                options.ConnectionString = "Server=localhost;Database=postgres;Port=5432;User Id=postgres;Password=cadastro";
+                options.ConnectionString = "Server=postgres;Database=mydb;Port=5432;User Id=postgres;Password=cadastro";
             });
 
             services.AddSingleton(resolver => resolver.GetRequiredService<IOptions<DatabaseContextOptions>>().Value);

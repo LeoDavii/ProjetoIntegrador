@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+  react-app:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=production
+    container_name: react-app-container
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_PASSWORD: cadastro
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"

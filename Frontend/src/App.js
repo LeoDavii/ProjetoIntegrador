@@ -13,7 +13,7 @@ import './App.css';
 const App = () => (
   <CartProvider>
     <UserProvider>
-      <Router>
+      <Router basename='/'>
         <div className="App">
           <Header />
           <div className="content">
@@ -21,6 +21,7 @@ const App = () => (
               <Route path="/" element={<Products />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<h1>404 - Página não encontrada</h1>} />
             </Routes>
           </div>
           <Footer />

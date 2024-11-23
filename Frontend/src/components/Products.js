@@ -25,7 +25,7 @@ const Products = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('https://localhost:44321/api/product');
+      const response = await fetch('http://localhost:8080/api/product');
       if (response.ok) {
         const data = await response.json();
         setProducts(data);
@@ -71,7 +71,7 @@ const Products = () => {
 
   const handleDelete = async () => {
     try {
-      const response = await fetch(`https://localhost:44321/api/product/${selectedProduct.id}`, {
+      const response = await fetch(`http://localhost:8080/api/product/${selectedProduct.id}`, {
         method: 'DELETE',
       });
 
@@ -116,7 +116,7 @@ const Products = () => {
     };
 
     try {
-      const response = await fetch('https://localhost:44321/api/product', {
+      const response = await fetch('http://localhost:8080/api/product', {
         method: 'PUT',
         body: JSON.stringify(formData),
         headers: { 'Content-Type': 'application/json' },
