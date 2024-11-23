@@ -1,0 +1,14 @@
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\bin\Debug\net8.0\Source.deps.json
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\bin\Debug\net8.0\Source.dll
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\bin\Debug\net8.0\Source.pdb
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\Source.csproj.AssemblyReference.cache
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\Source.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\Source.AssemblyInfoInputs.cache
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\Source.AssemblyInfo.cs
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\Source.csproj.CoreCompileInputs.cache
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\Source.dll
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\refint\Source.dll
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\Source.pdb
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\ref\Source.dll
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\bin\Debug\net8.0\Source.runtimeconfig.json
+C:\Users\leonardo.tavares\source\repos\ProjetoIntegrador\Source\obj\Debug\net8.0\Source.genruntimeconfig.cache
