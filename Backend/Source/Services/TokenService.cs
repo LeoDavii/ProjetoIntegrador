@@ -1,20 +1,16 @@
-﻿using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.IdentityModel.Tokens;
 using Source.Entities;
 using Source.Interfaces;
-using Source.Options;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
 public class TokenService : ITokenService
 {
-    private readonly JwtOptions _jwtOptions;
     private readonly int _expirationMinutes;
 
-    public TokenService(IOptions<JwtOptions> jwtOptions, int expirationMinutes = 60)
+    public TokenService(int expirationMinutes = 60)
     {
-        _jwtOptions = jwtOptions.Value;
         _expirationMinutes = expirationMinutes;
     }
 
@@ -25,8 +21,8 @@ public class TokenService : ITokenService
 
         var claims = new List<Claim>
         {
-            new(ClaimTypes.NameIdentifier, user.Email), 
-            new("UserType", user.Role.ToString()),  
+            new(ClaimTypes.NameIdentifier, user.Email),
+            new("UserType", user.Role.ToString()),
         };
 
         var expiration = DateTime.UtcNow.AddMinutes(_expirationMinutes);

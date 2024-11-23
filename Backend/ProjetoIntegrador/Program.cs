@@ -23,8 +23,6 @@ builder.Services.AddRepositories();
 builder.Services.AddServices();
 builder.Services.AddValidators();
 
-builder.Services.Configure<JwtOptions>(configuration.GetSection("Jwt"));
-
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
