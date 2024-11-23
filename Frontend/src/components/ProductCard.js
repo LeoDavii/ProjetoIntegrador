@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import './styles/ProductCard.css';
 import { FaTrash, FaEdit } from 'react-icons/fa';
 import UserRole from '../utils/UserRole';
+import { useUser } from '../utils/UserContext';
 
-const ProductCard = ({ name, description, value, userRole, imageUrl, onDelete, onEdit, onAddToCart, isUserLoggedIn }) => {
+const ProductCard = ({ name, description, value, imageUrl, onDelete, onEdit, onAddToCart, isUserLoggedIn }) => {
   const [editableValue, setEditableValue] = useState(value);
+  const { userRole } = useUser();
 
   const handleValueChange = (e) => {
     const value = e.target.value;
@@ -22,7 +24,7 @@ const ProductCard = ({ name, description, value, userRole, imageUrl, onDelete, o
       />
       <h3>{name}</h3>
       <p>{description}</p>
-      {userRole === UserRole.Manager ? (
+      {userRole == UserRole.Manager ? (
         <>
           <input
             type="text"
