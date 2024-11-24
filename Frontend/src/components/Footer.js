@@ -29,7 +29,7 @@ const Footer = () => (
             <FaGithub />
             </a>          
             <a
-            href="https://github.com/LeoDavii"
+            href="https://github.com/LeoDavii/ProjetoIntegrador/tree/main/Demonstra%C3%A7%C3%A3o%20de%20Usos%20e%20Testes%20Manuais"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: 'none', color: 'inherit' }}
