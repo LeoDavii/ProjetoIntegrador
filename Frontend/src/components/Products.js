@@ -149,7 +149,7 @@ const Products = () => {
             isUserLoggedIn={isUserLoggedIn}
           />
         ))}
-        {userRole === UserRole.Manager && (
+        {userRole == UserRole.Manager && (
           <div className="add-product-card" onClick={handleInsert}>
             <FaPlus size={32} />
           </div>

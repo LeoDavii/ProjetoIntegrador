@@ -14,7 +14,7 @@ describe('About Component', () => {
 
   test('renders the welcome paragraph', () => {
     render(<About />);
-    const welcomeParagraph = screen.getByText(/Bem-vindo à Cupcake Store!/i);
+    const welcomeParagraph = screen.getByText(/Bem-vindo à Tiny Little Cakes!/i);
     expect(welcomeParagraph).toBeInTheDocument();
   });
 

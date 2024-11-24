@@ -6,11 +6,14 @@ import Cart from './Cart.js';
 import './styles/Header.css';
 import UserRole from '../utils/UserRole.js';
 import { useCart } from '../utils/CartContext.js';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Header = () => {
     const [showDropdown, setShowDropdown] = useState(false);
     const [showLoginPopup, setShowLoginPopup] = useState(false);
     const { isOpen, setIsOpen } = useCart();
+    const [ toastMessage, setToastMessage ] = useState();
     const dropdownRef = useRef(null);
 
     const { setUserRole, userRole, userName, setUserName, setUserToken } = useUser();
@@ -60,24 +63,33 @@ const Header = () => {
         };
     }, []);
 
+    useEffect(() => {
+        if (toastMessage) {
+            toast.success(toastMessage);
+            setToastMessage(null);
+        }
+    }, [toastMessage]);
+
     return (
-        <header className="header">
-            <h1 className="logo">Cupcake Store</h1>
-            <nav className="nav">
-                <a href="/">Produtos</a>
-                <a href="about">Sobre Nós</a>
-                <a href="contact">Contato</a>
-            </nav>
+        <div>
+            <ToastContainer position="top-right" autoClose={4000} />
+            <header className="header">
+                <h1 className="logo">TL Cakes</h1>
+                <nav className="nav">
+                    <a href="/">Produtos</a>
+                    <a href="about">Sobre Nós</a>
+                    <a href="contact">Contato</a>
+                </nav>
             <div className="actions">
                 {userName ? (
-                    <div className="user-info">
+                   <div className="user-info">
                         <span>{userName}</span>
                         <div className="login-dropdown" ref={dropdownRef}>
                             <button className="icon-button login" onClick={toggleDropdown} title="Sair">
                                 <FaUser />
                             </button>
-                            {showDropdown && (
-                                <div className="dropdown-menu">
+                           {showDropdown && (
+                                 <div className="dropdown-menu">
                                     <button onClick={handleLogout}>Sair</button>
                                 </div>
                             )}
@@ -93,22 +105,23 @@ const Header = () => {
                                 <button onClick={openLoginPopup}>Login</button>
                             </div>
                         )}
-                    </div>
+                       </div>
                 )}
-                
+
                 {userName && (
                     <button 
-                        className={`icon-button cart ${userRole === UserRole.Manager ? 'disabled' : ''}`} 
+                        className={`icon-button cart ${userRole == UserRole.Manager ? 'disabled' : ''}`} 
                         onClick={toggleCart} 
                         title="Carrinho" 
-                        disabled={userRole === 'manager'}>
+                        disabled={userRole == UserRole.Manager}>
                         <FaShoppingCart />
                     </button>
                 )}
             </div>
-            {showLoginPopup && <LoginPopup onClose={closeLoginPopup} onLoginSuccess={handleLoginSuccess} />}
+            {showLoginPopup && <LoginPopup onClose={closeLoginPopup} onLoginSuccess={handleLoginSuccess} setToastMessage={setToastMessage} />}
             {isOpen && <Cart onClose={toggleCart} />}
         </header>
+    </div>
     );
 };
 

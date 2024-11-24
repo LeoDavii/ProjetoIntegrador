@@ -5,7 +5,7 @@ import './styles/Footer.css';
 const Footer = () => (
     <footer className="footer">
         <div className="footer-section">
-            <h4>Cupcake Store</h4>
+            <h4>Tiny Little Cakes</h4>
             <a href="about">Sobre Nós</a>
             <a href="contact">Fale Conosco</a>
         </div>
@@ -39,7 +39,7 @@ const Footer = () => (
             </div>
         </div>
         <div className="footer-section legal">
-            <p>© 2024 Cupcake Store - Projeto Integrador Transdisciplinar</p>
+            <p>© 2024 Tiny Little Cakes - Projeto Integrador Transdisciplinar</p>
             <p>Cruzeiro do Sul Virtual | Leonardo Davi Tavares</p>
         </div>
     </footer>
