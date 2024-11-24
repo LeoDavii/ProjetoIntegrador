@@ -1,0 +1,110 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #4d2c1d;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #ff6f61;
+  font-weight: bold;
+  width: 12.5%;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #4d2c1d;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #ff6f61;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 12.5%;  
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin: 15px;
+}
+
+.icon-button {
+  background-color: transparent;
+  border: none;
+  color: #4d2c1d;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.icon-button.cart {
+  margin-left: 0.5rem;
+}
+
+.icon-button.cart.disabled {
+  color: #ccc; /* Cor cinza para o carrinho */
+  cursor: not-allowed; /* Impede o clique */
+  background-color: #f0f0f0; /* Cor de fundo mais clara para indicar desabilitado */
+}
+
+.icon-button.cart[disabled] {
+  pointer-events: none; /* Bloqueia a interação com o carrinho */
+}
+
+.icon-button.login {
+}
+
+.login-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+.dropdown-menu button {
+  background-color: transparent;
+  border: none;
+  color: #4d2c1d;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.dropdown-menu button:hover {
+  color: #ff6f61;
+}
+
+

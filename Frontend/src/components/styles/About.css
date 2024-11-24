@@ -1,0 +1,25 @@
+.about {
+    border: 1px solid #e0c3c8;
+    border-radius: 10px; 
+    padding: 1.5rem;
+    margin: 2rem auto; 
+    text-align: center;
+    width: 50%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease; 
+    background-color: #ffffff; 
+  }
+  
+  .about-title {
+    font-size: 1.5rem; 
+    color: #4d2c1d; 
+    margin-bottom: 1rem;
+  }
+  
+  .about-content {
+    font-size: 0.9rem; 
+    color: #666; 
+    line-height: 1.4;
+  }
+  
+  

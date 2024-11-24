@@ -1,0 +1,143 @@
+.product-card {
+  border: 1px solid #e0c3c8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.value {
+  font-weight: bold;
+  color: #4d2c1d;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.add-to-cart {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #e55c50;
+}
+
+.add-to-cart:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+.add-to-cart:disabled:hover {
+  background-color: #d3d3d3;
+}
+
+.product-card .value-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e0c3c8;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.manager-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.icon-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: #e55c50;
+}
+
+.product-card.add-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border: 2px dashed #e0c3c8;
+  height: 200px;
+}
+
+.product-card.add-new:hover {
+  background-color: #e8e8e8;
+}
+
+.value-input {
+  border: 1px solid #e0c3c8;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+  width: 90% !important;
+  margin-top: 0.5rem;
+}
+
+.manager-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.icon-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background-color: #e55c50;
+}
+
+.add-product-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #e0c3c8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  text-align: center;
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.add-product-card:hover {
+  background-color: #f9f9f9;
+}
+

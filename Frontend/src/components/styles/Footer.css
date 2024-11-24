@@ -1,0 +1,53 @@
+.footer {
+  background-color: #ff6f61;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.footer-section {
+  text-align: left;
+  color: white;
+}
+
+.footer-section p {
+  color: white;
+}
+
+.footer-section h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.social-icons a {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.legal {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
