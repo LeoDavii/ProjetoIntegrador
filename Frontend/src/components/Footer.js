@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaGoogle, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaVideo, FaLinkedin } from 'react-icons/fa';
 import './styles/Footer.css';
 
 const Footer = () => (
@@ -34,7 +34,7 @@ const Footer = () => (
             rel="noopener noreferrer"
             style={{ textDecoration: 'none', color: 'inherit' }}
             >
-            <FaGoogle />
+            <FaVideo />
             </a>     
             </div>
         </div>

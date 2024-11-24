@@ -61,7 +61,7 @@ describe('Header component', () => {
   });
 
   it('should display disabled cart button when user role is manager', () => {
-    const userContextValue = { userName: 'John Doe', userRole: 'manager' };
+    const userContextValue = { userName: 'John Doe', userRole: '1' };
     const cartContextValue = { isOpen: false, setIsOpen: jest.fn() };
     
     renderWithProviders(userContextValue, cartContextValue);
