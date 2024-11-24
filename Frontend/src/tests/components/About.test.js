@@ -14,20 +14,14 @@ describe('About Component', () => {
 
   test('renders the welcome paragraph', () => {
     render(<About />);
-    const welcomeParagraph = screen.getByText(/Bem-vindo à Tiny Little Cakes!/i);
+    const welcomeParagraph = screen.getByText(/Bem-vindo à Tiny Little Cakes! Parte do projeto integrador interdisciplinar de Leonardo Davi Tavares. Desenvolvido no segundo semestre de 2024, a ideia é trazer um mockup de um commerce de cupcakes. Explore à vontade!/i);
     expect(welcomeParagraph).toBeInTheDocument();
-  });
-
-  test('renders the foundation year paragraph', () => {
-    render(<About />);
-    const foundationParagraph = screen.getByText(/Fundada em 2024/i);
-    expect(foundationParagraph).toBeInTheDocument();
   });
 
   test('renders two paragraphs in the content', () => {
     render(<About />);
     const paragraphs = screen.getAllByText((_, element) => element.tagName === 'P');
-    expect(paragraphs).toHaveLength(2);
+    expect(paragraphs).toHaveLength(1);
   });
 });
 

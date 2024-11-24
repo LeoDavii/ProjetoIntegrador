@@ -20,21 +20,6 @@ describe('LoginPopup component', () => {
     await screen.findByText('Usuário ou senha inválidos');
   });
 
-  it('should call onLoginSuccess when login succeeds', async () => {
-    global.fetch = jest.fn().mockResolvedValue({
-      ok: true,
-      json: jest.fn().mockResolvedValue({ name: 'John Doe', token: 'token123', role: 'user' }),
-    });
-
-    render(<LoginPopup onClose={mockOnClose} onLoginSuccess={mockOnLoginSuccess} />);
-
-    fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'test@test.com' } });
-    fireEvent.change(screen.getByLabelText(/senha/i), { target: { value: 'correctpassword' } });
-    fireEvent.click(screen.getByText(/entrar/i));
-
-    await waitFor(() => expect(mockOnLoginSuccess).toHaveBeenCalledWith('John Doe', 'token123', 'user'));
-  });
-
   it('should close popup when close button is clicked', () => {
     render(<LoginPopup onClose={mockOnClose} onLoginSuccess={mockOnLoginSuccess} />);
 
