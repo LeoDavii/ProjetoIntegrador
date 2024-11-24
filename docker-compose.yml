@@ -21,7 +21,7 @@ services:
   postgres:
     image: postgres:13
     environment:
-      POSTGRES_PASSWORD: cadastro
+      POSTGRES_PASSWORD: postgres
       POSTGRES_DB: mydb
     ports:
       - "5432:5432"
