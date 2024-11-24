@@ -1,9 +1,9 @@
 # ProjetoIntegrador
 Projeto Integrador - Cruzeiro do Sul Virtual
 
-Situação-Problema 1: Artefatos
-Situação-Problema 2: Raíz Repositório
-Situação-Problema 3: Demonstração de Usos e Testes Manuais
+- Situação-Problema 1: Artefatos
+- Situação-Problema 2: Raíz Repositório
+- Situação-Problema 3: Demonstração de Usos e Testes Manuais
 
 Pré-requisitos:
 Docker ou Rancher Desktop
